@@ -53,12 +53,17 @@ body {
   .main-background-name span {
     font-size: 32px;
   }
+  .main-background-name {
+    left: 5px;
+    position: relative;
+  }
   .list-lists {
     font-size: 24px;
   }
-  .main-background-box {
-    height: 200px;
-    width: 200px;
+  .main-background div:nth-child(2) {
+    height: 300px;
+    width: 300px;
+    left: 20%;
   }
 }
 .main-background-box {

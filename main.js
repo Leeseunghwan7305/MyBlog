@@ -3,10 +3,11 @@ const lists = document.querySelectorAll(".list-lists");
 const navList = document.querySelector(".list");
 const backGround = document.querySelector(".main-background");
 const name = document.querySelector(".main-background-name");
+const box = document.querySelector(".main.background-box");
 window.addEventListener("load", function () {
   backGround.style.height = window.innerHeight + "px";
-  backGround.style.top = window.innerHeight / 2 + "px";
-  backGround.style.left = window.innerWidth / 2 + "px";
+  box.style.top = window.innerHeight / 2 + "px";
+  box.style.left = window.innerWidth / 2 + "px";
 });
 lists.forEach((item) => {
   item.addEventListener("click", function (e) {
