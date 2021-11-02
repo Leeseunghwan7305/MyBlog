@@ -1,0 +1,102 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 200vh;
+  color: white;
+}
+.list-lists {
+  list-style: none;
+  padding: 12px 36px;
+  font-size: 32px;
+  font-family: "Hi Melody", cursive;
+  border-radius: 5%;
+}
+.list-lists:hover {
+  background-color: pink;
+}
+.list {
+  width: 100%;
+  margin: 0 auto;
+  background-color: transparent;
+  position: fixed;
+}
+.list ul {
+  display: flex;
+  justify-content: flex-end;
+}
+.underline {
+  width: 0px;
+  height: 0px;
+  left: 0px;
+  height: 3px;
+  position: absolute;
+  background-color: white;
+  transition: 1s all;
+}
+.main-background {
+  background-image: url("컴퓨터.jpg");
+  width: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 1000px;
+  background-repeat: no-repeat;
+}
+@media (max-width: 760px) {
+  .list ul {
+    display: flex;
+    justify-content: center;
+  }
+  .main-background-name span {
+    font-size: 32px;
+  }
+  .list-lists {
+    font-size: 24px;
+  }
+  .main-background-box {
+    height: 200px;
+    width: 200px;
+  }
+}
+.main-background-box {
+  height: 400px;
+  width: 400px;
+  background-color: transparent;
+  border: 5px solid black;
+  position: absolute;
+  left: 40%;
+  top: 30%;
+  transform: rotate(45deg);
+  transition: 1s all;
+}
+.main-background-box:hover {
+  transform: rotate(360deg);
+  transition: 1s all;
+}
+.main-background-name {
+  position: absolute;
+  font-size: 60px;
+  color: white;
+  font-family: "Hi Melody", cursive;
+  top: 35%;
+  left: 35%;
+  z-index: 1;
+}
+.study {
+  height: 100px;
+  width: 100%;
+  color: black;
+  text-align: center;
+  font-size: 120px;
+  transform: translateY(130px);
+}
+.study-context {
+  margin: 100px auto;
+  width: 70%;
+  height: 400px;
+  border: 1px black solid;
+  background-color: ;
+}
