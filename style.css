@@ -23,6 +23,7 @@ body {
   margin: 0 auto;
   background-color: transparent;
   position: fixed;
+  z-index: 5;
 }
 .list ul {
   display: flex;
@@ -96,12 +97,72 @@ body {
   color: black;
   text-align: center;
   font-size: 120px;
-  transform: translateY(130px);
+  padding: 300px 0;
+  padding-bottom: 350px;
 }
-.study-context {
-  margin: 100px auto;
-  width: 70%;
+.study-lists {
+  width: 90%;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-around;
+  padding=bottom: 250px;
+}
+.study-list img {
   height: 400px;
-  border: 1px black solid;
-  background-color: ;
+  width: 400px;
+  border-radius: 50%;
+  transition: transform 1s;
+}
+.studyUp {
+  transform: translateY(-250px);
+  transition: all 1.5s;
+}
+.study-list img:hover {
+  transform: translateY(-250px);
+  border: 3px solid black;
+  box-shadow: 5px 5px 5px 5px gray;
+}
+.past {
+  width: 100%;
+  height: 350px;
+  background-color: #f39c12;
+}
+.past-head {
+  color: black;
+  text-align: center;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 80px;
+  font-weight: 600;
+  font-family: "Hi Melody", cursive;
+}
+.past-list {
+  width: 100%;
+}
+.past-list ul {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.past-list {
+  width: 100%;
+}
+.past-list button {
+  width: 100%;
+  padding: 10px 30px;
+  background-color: white;
+  border: 1px solid black;
+  margin: 10px 10px;
+  margin-bottom: 200px;
+  border-radius: 5%;
+  font-size: 30px;
+}
+.past-list button:hover {
+  background-color: gray;
+}
+.past-img-list {
+  color: black;
 }

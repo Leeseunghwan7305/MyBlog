@@ -4,6 +4,14 @@ const navList = document.querySelector(".list");
 const backGround = document.querySelector(".main-background");
 const name = document.querySelector(".main-background-name");
 const box = document.querySelector(".main.background-box");
+const studyList = document.querySelectorAll(".study-list");
+const imgList = document.querySelector(".past-img-list");
+const pastButton6 = document.querySelector(".past-list-6");
+const pastButton7 = document.querySelector(".past-list-7");
+const pastButton8 = document.querySelector(".past-list-8");
+const pastButton9 = document.querySelector(".past-list-9");
+const pastButton10 = document.querySelector(".past-list-10");
+const pastButton11 = document.querySelector(".past-list-11");
 window.addEventListener("load", function () {
   backGround.style.height = window.innerHeight + "px";
   box.style.top = window.innerHeight / 2 + "px";
@@ -44,10 +52,42 @@ function typing2() {
 setInterval(typing, 200);
 setInterval(typing2, 200);
 window.addEventListener("scroll", function () {
-  if (document.documentElement.scrollTop > 0) {
+  let scrollTop = document.documentElement.scrollTop;
+  if (scrollTop > 0) {
     navList.style.background = "black";
     navList.style.padding = "8px 5px";
   } else {
     navList.style.background = "transparent";
   }
+  function up() {
+    if (scrollTop > 650) {
+      studyList.forEach((item) => {
+        item.classList.add("studyUp");
+      });
+    } else {
+      studyList.forEach((item) => {
+        item.classList.remove("studyUp");
+      });
+    }
+  }
+  up();
+  console.log(scrollTop);
+});
+pastButton6.addEventListener("click", function () {
+  imgList.innerHTML = `시발시발`;
+});
+pastButton7.addEventListener("click", function () {
+  imgList.innerHTML = `시발시발2`;
+});
+pastButton8.addEventListener("click", function () {
+  imgList.innerHTML = `시발시발3`;
+});
+pastButton9.addEventListener("click", function () {
+  imgList.innerHTML = `시발시발4`;
+});
+pastButton10.addEventListener("click", function () {
+  imgList.innerHTML = `시발시발5`;
+});
+pastButton11.addEventListener("click", function () {
+  imgList.innerHTML = `시발시발6`;
 });
