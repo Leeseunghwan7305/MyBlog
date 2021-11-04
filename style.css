@@ -1,6 +1,7 @@
 html {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 body {
   margin: 0;
@@ -65,6 +66,46 @@ body {
     height: 300px;
     width: 300px;
     left: 20%;
+  }
+  .main-study .study {
+    font-size: 60px;
+  }
+  .main-study .study-lists {
+    display: flex;
+    width: 100%;
+  }
+  .main-study .study-lists img {
+    height: 150px;
+    width: 150px;
+  }
+  .past-context-lists {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+  }
+  .past-context-lists div {
+    width: 100%;
+    font-size: 10px;
+  }
+  .past-context-lists .imgs-6,
+  .past-context-lists .imgs-7,
+  .past-context-lists .imgs-8,
+  .past-context-lists .imgs-9,
+  .past-context-lists .imgs-10 {
+    width: 100%;
+    margin: 0;
+  }
+  .image-7 {
+    width: 500px;
+  }
+  .image-8 {
+    width: 500px;
+    margin: 0;
+  }
+  .image-9 {
+    width: 500px;
+    margin: 0;
   }
 }
 .main-background-box {
@@ -139,30 +180,78 @@ body {
   font-weight: 600;
   font-family: "Hi Melody", cursive;
 }
-.past-list {
+.past-context {
   width: 100%;
 }
-.past-list ul {
+.past-context-lists {
+  width: 100%;
   display: flex;
+  text-align: center;
   justify-content: center;
-  width: 100%;
-}
-.past-list {
-  width: 100%;
-}
-.past-list button {
-  width: 100%;
-  padding: 10px 30px;
-  background-color: white;
-  border: 1px solid black;
-  margin: 10px 10px;
   margin-bottom: 200px;
-  border-radius: 5%;
-  font-size: 30px;
 }
-.past-list button:hover {
-  background-color: gray;
+.past-context-lists img {
+  width: 50%;
+  margin-left: 80px;
+  margin-right: 40px;
+  border-radius: 3%;
+  transition: transform 1s;
 }
-.past-img-list {
+.past-context-lists img:hover {
+  transform: translateY(-50px);
+  border: 3px solid black;
+  box-shadow: 5px 5px 5px 5px gray;
+}
+.past-context-list {
+  width: 40%;
   color: black;
+  font-family: "Hi Melody", cursive;
+}
+.past-list1,
+.past-list3,
+.past-list5 {
+  transform: translateX(1000px);
+}
+.past-list4 {
+  transform: translateX(-1000px);
+}
+.past-list2 {
+  transform: translateY(-1000px);
+  transition: all 1s;
+}
+.past-list2:hover {
+  transform: translateY(-70px);
+}
+
+.past-context-list h1 {
+  font-size: 80px;
+  margin-bottom: 30px;
+}
+.past-context-list p {
+  font-size: 40px;
+}
+.image-7 {
+  width: 40%;
+}
+.image-7 img {
+  width: 100%;
+  height: 300px;
+}
+.image-8 img {
+  width: 80%;
+}
+.image-9 {
+  height: 500px;
+}
+.image-9 img {
+  height: 500px;
+}
+.new {
+  transform: translateX(0px);
+  color: black;
+  transition: all 2s;
+}
+.newnew {
+  transform: translateY(500px);
+  transition: all 1s;
 }

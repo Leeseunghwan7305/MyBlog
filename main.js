@@ -6,12 +6,11 @@ const name = document.querySelector(".main-background-name");
 const box = document.querySelector(".main.background-box");
 const studyList = document.querySelectorAll(".study-list");
 const imgList = document.querySelector(".past-img-list");
-const pastButton6 = document.querySelector(".past-list-6");
-const pastButton7 = document.querySelector(".past-list-7");
-const pastButton8 = document.querySelector(".past-list-8");
-const pastButton9 = document.querySelector(".past-list-9");
-const pastButton10 = document.querySelector(".past-list-10");
-const pastButton11 = document.querySelector(".past-list-11");
+const text6 = document.querySelector(".text1");
+const text7 = document.querySelector(".text2");
+const text8 = document.querySelector(".text3");
+const text9 = document.querySelector(".text4");
+const text10 = document.querySelector(".text5");
 window.addEventListener("load", function () {
   backGround.style.height = window.innerHeight + "px";
   box.style.top = window.innerHeight / 2 + "px";
@@ -59,6 +58,17 @@ window.addEventListener("scroll", function () {
   } else {
     navList.style.background = "transparent";
   }
+  if (scrollTop > 5000) {
+    text10.classList.add("new");
+  } else if (scrollTop > 4550) {
+    text9.classList.add("new");
+  } else if (scrollTop > 3800) {
+    text8.classList.add("new");
+  } else if (scrollTop > 1800) {
+    text6.classList.add("new");
+  } else if (scrollTop > 1700) {
+    text7.classList.add("newnew");
+  }
   function up() {
     if (scrollTop > 650) {
       studyList.forEach((item) => {
@@ -72,22 +82,4 @@ window.addEventListener("scroll", function () {
   }
   up();
   console.log(scrollTop);
-});
-pastButton6.addEventListener("click", function () {
-  imgList.innerHTML = `시발시발`;
-});
-pastButton7.addEventListener("click", function () {
-  imgList.innerHTML = `시발시발2`;
-});
-pastButton8.addEventListener("click", function () {
-  imgList.innerHTML = `시발시발3`;
-});
-pastButton9.addEventListener("click", function () {
-  imgList.innerHTML = `시발시발4`;
-});
-pastButton10.addEventListener("click", function () {
-  imgList.innerHTML = `시발시발5`;
-});
-pastButton11.addEventListener("click", function () {
-  imgList.innerHTML = `시발시발6`;
 });
