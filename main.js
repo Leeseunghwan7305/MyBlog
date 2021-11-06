@@ -95,7 +95,7 @@ window.addEventListener("scroll", function () {
   } else {
     navList.style.background = "transparent";
   }
-  if (scrollTop > 5000) {
+  if (scrollTop > 5500) {
     text10.classList.add("new");
   } else if (scrollTop > 4550) {
     text9.classList.add("new");
