@@ -141,7 +141,7 @@ button4.addEventListener("click", function () {
   futureImg.innerHTML = `<img class="future-img" src="헬스.png" />`;
 });
 goodButton.addEventListener("click", function () {
-  goodButton.innerHTML = ` <i class="fa-solid fa-heart"></i>좋아요 ${heart}`;
+  goodButton.innerHTML = `좋아요 ${heart}개`;
   heart++;
 });
 const chatInput = document.querySelector(".chat-input");
@@ -158,9 +158,12 @@ chatButton.addEventListener("click", function () {
     chatInput.focus();
   }
 });
+let contextCount = 0;
 function creatchat(text) {
-  const li = document.createElement("li");
-  li.setAttribute("class", "chatlist");
-  li.innerHTML = `${text}`;
-  chatList.appendChild(li);
+  contextCount++;
+  const div = document.createElement("div");
+  div.setAttribute("class", "chatdiv");
+  div.innerHTML = `${contextCount}번째 댓글: ${text}`;
+  div.setAttribute("class", "chatlist");
+  chatList.appendChild(div);
 }

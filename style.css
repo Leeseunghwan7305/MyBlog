@@ -48,6 +48,20 @@ body {
   background-repeat: no-repeat;
 }
 @media (max-width: 760px) {
+  .communication .person {
+    width: 25%;
+    height: 150px;
+    border-radius: 50%;
+    background-image: url("고슴도치.jpg");
+    background-size: cover;
+  }
+  .communication .chat {
+    display: flex;
+  }
+  .communication .chat-button {
+    padding: 12px 12px;
+    border-radius: 0px 15% 15% 0px;
+  }
   .list ul {
     display: flex;
     justify-content: center;
