@@ -1,0 +1,135 @@
+.future-buttons {
+  width: 100%;
+  background-color: wheat;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+}
+.future-button {
+  font-family: "paybooc-Light", sans-serif;
+  font-weight: 600;
+  list-style: none;
+  padding: 20px 32px;
+  margin: 0px 10px;
+  border: none;
+  border-radius: 20px;
+  transition-duration: 0.3s;
+  box-shadow: 3px 3px 3px black;
+  color: whitesmoke;
+  font-size: 1.4em;
+}
+.future1 {
+  background-color: aliceblue;
+  color: #1e6b7b;
+  width: 20%;
+}
+
+.future2 {
+  background-color: #77af9c;
+}
+.future3 {
+  background-color: #519d9e;
+}
+.future4 {
+  background-color: #f199bc;
+}
+.future1:active {
+  transform: scale(1.2);
+  box-shadow: none;
+}
+.future2:active {
+  transform: scale(1.2);
+  box-shadow: none;
+}
+.future3:active {
+  transform: scale(1.2);
+  box-shadow: none;
+}
+.future4:active {
+  transform: scale(1.2);
+  box-shadow: none;
+}
+.future-imgs {
+  background-color: transparent;
+  color: white;
+  height: 250px;
+  width: 30%;
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+  transition: all 1s;
+}
+.future-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15%;
+  transition: transform 1s;
+  margin: 0px 5px;
+}
+.future-img:hover {
+  transform: translateY(-50px);
+  border: 3px solid black;
+}
+.good-button {
+  width: 100%;
+  text-align: center;
+}
+.good-buttons {
+  margin: 0 auto;
+  color: black;
+  padding: 10px 32px;
+  border: none;
+  border-radius: 15%;
+}
+.good-buttons:hover {
+  transform: scale(1.2);
+}
+.fa-solid {
+  height: 10px;
+  width: 10px;
+  color: black;
+}
+.communication {
+  width: 80%;
+  height: 200px;
+  margin: 100px auto;
+  background-color: red;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 1%;
+}
+.person {
+  width: 15%;
+  height: 100px;
+  border-radius: 50%;
+  background-color: black;
+}
+.chat {
+  width: 70%;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  color: black;
+}
+.chat input {
+  width: 100%;
+  padding: 30px 5px;
+}
+.chatting-list {
+  width: 100%;
+  list-style: none;
+}
+.chatlist {
+  text-align: center;
+  border: 3px solid black;
+
+  margin: 5px 40%;
+  padding: 12px 32px;
+  font-size: 32px;
+  color: black;
+  width: 40%;
+  background-color: yellow;
+}

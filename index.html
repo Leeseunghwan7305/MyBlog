@@ -8,20 +8,25 @@
     <link rel="stylesheet" href="reset.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="past-opinion.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap"
       rel="stylesheet"
     />
     <title>Document</title>
+    <link
+      href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <nav class="list">
       <ul>
         <div class="underline"></div>
-        <li class="list-lists">Home</li>
-        <li class="list-lists">Past</li>
-        <li class="list-lists">Future</li>
-        <li class="list-lists">댓글창</li>
+        <li class="list-lists list-lists1">Home</li>
+        <li class="list-lists list-lists2">Past</li>
+        <li class="list-lists list-lists3">Future</li>
+        <li class="list-lists list-lists4">댓글창</li>
       </ul>
     </nav>
     <div class="main-background">
@@ -58,7 +63,7 @@
       </div>
     </div>
     <div class="past"></div>
-    <div class="past-head"><h1>공부한 내용</h1></div>
+    <div class="past-head past-scroll"><h1>공부한 내용</h1></div>
     <div class="past-context">
       <div class="past-list">
         <div class="past-context-lists">
@@ -130,6 +135,33 @@
         </div>
       </div>
     </div>
+    <div class="past"></div>
+    <div class="past-head future-scroll"><h1>하고싶은 일</h1></div>
+    <div class="future-buttons">
+      <button class="future-button future1">모두보기</button>
+      <button class="future-button future2">공부</button>
+      <button class="future-button future3">여행</button>
+      <button class="future-button future4">운동</button>
+    </div>
+    <div class="future-imgs"></div>
+    <div class="good-button">
+      <button class="good-buttons">
+        <i class="fa-solid fa-heart"></i>좋아요
+      </button>
+    </div>
+    <div class="communication">
+      <div class="person"></div>
+      <div class="chat">
+        <input
+          class="chat-input"
+          type="text"
+          placeholder="댓글을 입력해주세요."
+        />
+        <button class="chat-button">작성하기</button>
+      </div>
+    </div>
+    <div class="chatting-list"></div>
   </body>
   <script src="main.js"></script>
+  <script src="main2.js"></script>
 </html>

@@ -11,6 +11,42 @@ const text7 = document.querySelector(".text2");
 const text8 = document.querySelector(".text3");
 const text9 = document.querySelector(".text4");
 const text10 = document.querySelector(".text5");
+const goodButton = document.querySelector(".good-buttons");
+const list1 = document.querySelector(".list-lists1");
+const list2 = document.querySelector(".list-lists2");
+const list3 = document.querySelector(".list-lists3");
+const list4 = document.querySelector(".list-lists4");
+const pastScroll = document.querySelector(".past-scroll");
+const futureScroll = document.querySelector(".future-scroll");
+list1.addEventListener("click", function () {
+  backGround.scrollIntoView({
+    behavior: "smooth",
+    block: "start",
+    inline: "nearest",
+  });
+});
+list2.addEventListener("click", function () {
+  pastScroll.scrollIntoView({
+    behavior: "smooth",
+    block: "start",
+    inline: "nearest",
+  });
+});
+list3.addEventListener("click", function () {
+  futureScroll.scrollIntoView({
+    behavior: "smooth",
+    block: "start",
+    inline: "nearest",
+  });
+});
+list4.addEventListener("click", function () {
+  goodButton.scrollIntoView({
+    behavior: "smooth",
+    block: "start",
+    inline: "nearest",
+  });
+});
+let heart = 1;
 window.addEventListener("load", function () {
   backGround.style.height = window.innerHeight + "px";
   box.style.top = window.innerHeight / 2 + "px";
@@ -27,6 +63,7 @@ function lineColor(e) {
   listLine.style.top =
     e.currentTarget.offsetTop + e.currentTarget.offsetHeight + "px";
 }
+
 const content = "HELLO :) WELCOME TO MY BLOG";
 const content2 = " 안녕하세요 이승환입니다.";
 const text = document.querySelector(".text");
@@ -67,7 +104,6 @@ window.addEventListener("scroll", function () {
   } else if (scrollTop > 1800) {
     text6.classList.add("new");
   } else if (scrollTop > 1700) {
-    text7.classList.add("newnew");
   }
   function up() {
     if (scrollTop > 650) {
@@ -83,3 +119,48 @@ window.addEventListener("scroll", function () {
   up();
   console.log(scrollTop);
 });
+const button1 = document.querySelector(".future1");
+const button2 = document.querySelector(".future2");
+const button3 = document.querySelector(".future3");
+const button4 = document.querySelector(".future4");
+const futureImg = document.querySelector(".future-imgs");
+
+button2.addEventListener("click", function () {
+  futureImg.innerHTML = `<img class="future-img" src="코딩.jpg" />`;
+});
+button1.addEventListener("click", function () {
+  futureImg.innerHTML = `<img class="future-img" src="코딩.jpg" />
+  <img class="future-img" src="여행.jpg" />
+  <img class="future-img" src="헬스.png" />`;
+});
+
+button3.addEventListener("click", function () {
+  futureImg.innerHTML = `<img class="future-img" src="여행.jpg" />`;
+});
+button4.addEventListener("click", function () {
+  futureImg.innerHTML = `<img class="future-img" src="헬스.png" />`;
+});
+goodButton.addEventListener("click", function () {
+  goodButton.innerHTML = ` <i class="fa-solid fa-heart"></i>좋아요 ${heart}`;
+  heart++;
+});
+const chatInput = document.querySelector(".chat-input");
+const chatList = document.querySelector(".chatting-list");
+const chatButton = document.querySelector(".chat-button");
+
+chatButton.addEventListener("click", function () {
+  if (chatInput.value == "") {
+    return 0;
+  } else {
+    let text = chatInput.value;
+    creatchat(text);
+    chatInput.value = "";
+    chatInput.focus();
+  }
+});
+function creatchat(text) {
+  const li = document.createElement("li");
+  li.setAttribute("class", "chatlist");
+  li.innerHTML = `${text}`;
+  chatList.appendChild(li);
+}
